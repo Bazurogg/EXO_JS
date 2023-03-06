@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Exemple de bouton avec alerte JavaScript</title>
+    <style>
+      .maClasse {
+        background-color: yellow;
+        color: red;
+        font-size: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="monBouton" class="maClasse">Cliquez ici</button>
+    <script>
+      var bouton = document.getElementById("monBouton");
+      bouton.addEventListener("click", function() {
+        var classe = bouton.getAttribute("class");
+        var style = window.getComputedStyle(bouton);
+        var properties = "";
+        for (var i = 0; i < style.length; i++) {
+          var property = style[i];
+          if (property === "background-color" || property === "font-size") {
+            var propertyName = property.replace(/(-\w)/g, function(match) {
+              return match[1].toUpperCase();
+            });
+            properties += propertyName + ": " + style.getPropertyValue(property) + "\n";
+          }
+        }
+        alert("Nom de la classe : " + classe + "\n\n Propriétés CSS :\n\n" + properties);
+      });
+    </script>
+  </body>
+</html>
