@@ -1,0 +1,40 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(2
+, 205px);
+}
+
+.box {
+    color:whitesmoke;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(96, 165, 117, 0.836);
+    font-size: 9em;
+    text-align: center;
+    line-height: 205px;
+    margin: 2px;
+    cursor: pointer;
+    transition: transform 1s, width 1s, height 1s;
+}
+
+.box-transform {
+    color:whitesmoke;
+    background-color: rgba(255, 107, 176, 0.836);
+    font-size: 9em;
+    text-align: center;
+    line-height: 205px;
+    cursor: pointer;
+    transform: scale(0.9) rotate(360deg);
+}
