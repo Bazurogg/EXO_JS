@@ -34,12 +34,14 @@
     background-color: crimson;
     color: pink;
     font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
 }
 
 .box-cross {
     background-color: rgb(44, 168, 64);
     color: rgb(168, 254, 121);
     font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
 }
 
 .info-container {

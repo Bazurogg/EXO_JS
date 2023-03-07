@@ -5,7 +5,7 @@ box.classList.add("box")
 const board = document.querySelector("#board")
  
 let nbBox = 9
-let symbol = 'O'
+let symbol = prompt("1st Player choose your team  : [ X ] or [ O ]")
 
 for (let i = 1; i <= nbBox; i++){
 
@@ -29,12 +29,12 @@ for (let i = 1; i <= nbBox; i++){
 
         // 2 nd choix en splitant la condition avec "if": ( ! fonctionne )
 
-        if (symbol === 'X') {
+        if (symbol === 'x') {
             box.classList.add("box-cross");
-            symbol = 'O';
+            symbol = 'o';
         } else {
             box.classList.add("box-circle");
-            symbol = 'X';
+            symbol = 'x';
 
         }
         document.getElementById('player-turn').innerHTML = symbol + " it's your turn !"
