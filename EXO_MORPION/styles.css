@@ -19,7 +19,7 @@ body {
 .box {
     width: 200px;
     height: 200px;
-    background-color: rgba(45, 217, 163, 0.836);
+    background-color: rgba(194, 216, 224, 0.836);
     font-size: 9em;
     text-align: center;
     line-height: 205px;
@@ -27,6 +27,12 @@ body {
     transition: transform 0.6s;
 }
 
-/* .box-transform {
+.box-circle {
+    background-color: crimson;
+    color: pink;
+}
 
-} */
+.box-cross {
+    background-color: rgb(44, 168, 64);
+    color: rgb(168, 254, 121);
+}

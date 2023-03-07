@@ -9,19 +9,13 @@ let nbBox = 9
 for (let i = 1; i <= nbBox; i++){
     let newbox = box.cloneNode()
     board.appendChild(newbox)
-    newbox.textContent = 'O'
-
-    function transformer(box){
-
-        if (box.classList.contains("box-transform")){
-
-        } else {
-
-            box.classList.add("box-transform")
-        }
+    
+    function addSymbol(box){
+        box.classList.add("box-circle")
     }
-
+    
     newbox.addEventListener("click", function(){
-        transformer(newbox)
+        addSymbol(newbox)
+        newbox.textContent = 'O'
     })
 }
