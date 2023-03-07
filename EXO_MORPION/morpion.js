@@ -47,15 +47,28 @@ for (let i = 1; i <= nbBox; i++){
         turnCntr = turnCntr + 1
         document.getElementById('counter-turn').innerHTML = "Turn N° : " + turnCntr
         console.log ("Tours N° :" + turnCntr)
-
-        document.getElementById('player-turn').innerHTML = '[ ' + symbol + ' ]' + " it's your turn !"
-
-
-
-    } 
         
+        
+        
+        document.getElementById('player-turn').innerHTML = '[ ' + symbol + ' ]' + " it's your turn !"
+        
+    }
+    
     newbox.addEventListener("click", function(){
         addSymbol(newbox)
+        if (turnCntr === 9) {
+            setTimeout(function() {
+                alert('Game over - Restart ?')
+                location.reload()
+            }, 500)
+            
+        }
+        
+        // window.addEventListener('unload', function(){
+        //     location.reload()
+        // })
+        
     })
-
+    
+    
 }

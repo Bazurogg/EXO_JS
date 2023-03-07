@@ -6,11 +6,11 @@
     padding: 0;
 }
 
-.game-container {
+/* .game-container {
 
     border: solid 1px red;
 
-}
+} */
 
 .game-board {
     display: flex;
@@ -33,7 +33,7 @@
 .grid-container {
     display: flex;
     flex-direction: column;
-    border: solid 1px black;
+    /* border: solid 1px black; */
     text-align: center;
     align-items: center;
 
