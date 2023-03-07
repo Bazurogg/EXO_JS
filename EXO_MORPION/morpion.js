@@ -32,15 +32,15 @@ for (let i = 1; i <= nbBox; i++){
         if (symbol === 'X') {
             box.classList.add("box-cross");
             symbol = 'O';
-            // document.getElementById('player-turn').innerHTML = "It's player" +  + " !"
-          } else {
+        } else {
             box.classList.add("box-circle");
             symbol = 'X';
+
         }
+        document.getElementById('player-turn').innerHTML = symbol + " it's your turn !"
     } 
         
     newbox.addEventListener("click", function(){
         addSymbol(newbox)
     })
-
 }
