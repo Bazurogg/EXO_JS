@@ -8,6 +8,8 @@ let nbBox = 9
 let symbol = prompt("1st Player choose your team  : [ X ] or [ O ]")
 let turnCntr = 0
 
+document.getElementById('player-turn').innerHTML = "Let's Go ! Player " + '" ' + symbol + ' "' + " you start !"
+
 for (let i = 1; i <= nbBox; i++){
 
     let newbox = box.cloneNode()
@@ -38,7 +40,8 @@ for (let i = 1; i <= nbBox; i++){
             symbol = 'x';
 
         }
-        document.getElementById('player-turn').innerHTML = symbol + " it's your turn !"
+
+        document.getElementById('player-turn').innerHTML = '" ' + symbol + ' "' + " it's your turn !"
     } 
         
     newbox.addEventListener("click", function(){
