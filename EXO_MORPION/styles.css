@@ -6,14 +6,41 @@
     padding: 0;
 }
 
+.game-container {
+
+    border: solid 1px red;
+
+}
+
+.game-board {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.counter-box {
+    padding-top: 30vh;
+    text-align: center;
+}
+
+#counter-turn {
+    margin-left: 20vh;
+    margin-right: 35vh;
+    font-size: 50px;
+    font-family: 'Quicksand', sans-serif;
+}
+
 .grid-container {
     display: flex;
     flex-direction: column;
+    border: solid 1px black;
+    text-align: center;
     align-items: center;
+
 }
 
 #board {
-    margin-top: 10px;
+    margin-top: 70px;
     display: grid;
     grid-template-columns: repeat(3, 205px);
     row-gap: 5px;

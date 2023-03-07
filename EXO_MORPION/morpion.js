@@ -8,7 +8,7 @@ let nbBox = 9
 let symbol = prompt("1st Player choose your team  : [ X ] or [ O ]")
 let turnCntr = 0
 
-document.getElementById('player-turn').innerHTML = "Let's Go ! Player " + '" ' + symbol + ' "' + " you start !"
+document.getElementById('player-turn').innerHTML = "Go " + '[ ' + symbol + ' ]' + " you start !"
 
 for (let i = 1; i <= nbBox; i++){
 
@@ -33,20 +33,29 @@ for (let i = 1; i <= nbBox; i++){
         // 2 nd choix en splitant la condition avec "if": ( ! fonctionne )
 
         if (symbol === 'x') {
+
             box.classList.add("box-cross");
             symbol = 'o';
+
         } else {
+
             box.classList.add("box-circle");
             symbol = 'x';
 
         }
 
-        document.getElementById('player-turn').innerHTML = '" ' + symbol + ' "' + " it's your turn !"
+        turnCntr = turnCntr + 1
+        document.getElementById('counter-turn').innerHTML = "Turn N° : " + turnCntr
+        console.log ("Tours N° :" + turnCntr)
+
+        document.getElementById('player-turn').innerHTML = '[ ' + symbol + ' ]' + " it's your turn !"
+
+
+
     } 
         
     newbox.addEventListener("click", function(){
         addSymbol(newbox)
-        turnCntr = turnCntr + 1
-        console.log ("Tours N° :" + turnCntr)
     })
+
 }
