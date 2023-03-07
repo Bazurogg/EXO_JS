@@ -5,7 +5,7 @@ box.classList.add("box")
 const board = document.querySelector("#board")
  
 let nbBox = 9
-let symbol = 'X'
+let symbol = 'O'
 
 for (let i = 1; i <= nbBox; i++){
 
