@@ -8,7 +8,7 @@ let nbBox = 9
 let symbol = 'X'
 
 for (let i = 1; i <= nbBox; i++){
-    
+
     let newbox = box.cloneNode()
     board.appendChild(newbox)
     
@@ -25,19 +25,18 @@ for (let i = 1; i <= nbBox; i++){
 
         // 1 er Test avec un l'opérateur ternaire 
         // (! non concluant: Affichage d'une erreur lors du clic)
-
         // symbol = (symbol === 'X') ? 'O' + box.classList.add("box-circle") : 'X' + box.classList.add("box-cross") 
 
-        // 2 nd choix en splitant la condition : ( ! fonctionne )
+        // 2 nd choix en splitant la condition avec "if": ( ! fonctionne )
 
         if (symbol === 'X') {
             box.classList.add("box-cross");
             symbol = 'O';
+            // document.getElementById('player-turn').innerHTML = "It's player" +  + " !"
           } else {
             box.classList.add("box-circle");
             symbol = 'X';
         }
-            
     } 
         
     newbox.addEventListener("click", function(){

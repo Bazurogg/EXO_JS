@@ -41,3 +41,14 @@ body {
     color: rgb(168, 254, 121);
     font-family: 'Quicksand', sans-serif;
 }
+
+.info-container {
+    margin-top: 30px;
+}
+
+#player-turn {
+    font-size: 30px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+
+}
