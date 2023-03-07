@@ -6,6 +6,7 @@ const board = document.querySelector("#board")
  
 let nbBox = 9
 let symbol = prompt("1st Player choose your team  : [ X ] or [ O ]")
+let turnCntr = 0
 
 for (let i = 1; i <= nbBox; i++){
 
@@ -42,5 +43,7 @@ for (let i = 1; i <= nbBox; i++){
         
     newbox.addEventListener("click", function(){
         addSymbol(newbox)
+        turnCntr = turnCntr + 1
+        console.log ("Tours N° :" + turnCntr)
     })
 }
