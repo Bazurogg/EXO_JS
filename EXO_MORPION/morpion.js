@@ -3,11 +3,13 @@ const box = document.createElement("div")
 box.classList.add("box")
 
 const board = document.querySelector("#board")
- 
-let nbBox = 9
-let symbol = prompt("1st Player choose your team  : [ X ] or [ O ]")
-let turnCntr = 0
+// const players = new array["player1", "player2"]
 
+
+let nbBox = 9
+let symbol = 'X'
+let turnCntr = 0
+// console.log (players())
 document.getElementById('player-turn').innerHTML = "Go " + '[ ' + symbol + ' ]' + " you start !"
 
 for (let i = 1; i <= nbBox; i++){
@@ -32,15 +34,15 @@ for (let i = 1; i <= nbBox; i++){
 
         // 2 nd choix en splitant la condition avec "if": ( ! fonctionne )
 
-        if (symbol === 'x') {
+        if (symbol === 'X') {
 
             box.classList.add("box-cross");
-            symbol = 'o';
+            symbol = 'O';
 
         } else {
 
             box.classList.add("box-circle");
-            symbol = 'x';
+            symbol = 'X';
 
         }
 
@@ -60,15 +62,12 @@ for (let i = 1; i <= nbBox; i++){
             setTimeout(function() {
                 alert('Game over - Restart ?')
                 location.reload()
-            }, 500)
+            }, 200)
             
         }
         
-        // window.addEventListener('unload', function(){
-        //     location.reload()
-        // })
-        
+
     })
     
-    
+
 }
