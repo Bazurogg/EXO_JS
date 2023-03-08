@@ -3,7 +3,7 @@ const box = document.createElement("div")
 box.classList.add("box")
 
 const board = document.querySelector("#board")
-// const players = new array["player1", "player2"]
+const players = ["Player 01", "Player 02"]
 
 
 let nbBox = 9
@@ -11,6 +11,8 @@ let symbol = 'X'
 let turnCntr = 0
 // console.log (players())
 document.getElementById('player-turn').innerHTML = "Go " + '[ ' + symbol + ' ]' + " you start !"
+
+console.log (players)
 
 for (let i = 1; i <= nbBox; i++){
 
@@ -68,6 +70,7 @@ for (let i = 1; i <= nbBox; i++){
         
 
     })
+    
     
 
 }
