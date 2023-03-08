@@ -13,7 +13,6 @@
 .box {
     width : 60px;
     height: 60px;
-    background-color : rgb(255, 188, 18);
     color: whitesmoke;
     font-family: 'Courier New', Courier, monospace;
     cursor: pointer;
