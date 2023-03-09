@@ -21,8 +21,14 @@ document.addEventListener('keydown', function(event){
       const box = document.createElement("div")
       box.classList.add("box")
       box.style.backgroundColor = getRandomColor()
-      board.appendChild (box)
-      
+      board.appendChild (box);
+
+      if (board.querySelectorAll(".box").length === 6 || board.querySelectorAll(".box").length === 7 || board.querySelectorAll(".box").length === 8 || board.querySelectorAll(".box").length === 9 || board.querySelectorAll(".box").length === 10) {
+        box.style.cursor = 'pointer';
+        box.addEventListener("click", function() {
+           box.classList.add("box-transform")
+        })
+      }     
     }
     
   } else if (event.key === "ArrowUp"){
@@ -35,7 +41,7 @@ document.addEventListener('keydown', function(event){
     //     const list = document.getElementById("myList");
     //     list.removeChild(list.lastElementChild);
     // }
-    
+
   }
   
 
