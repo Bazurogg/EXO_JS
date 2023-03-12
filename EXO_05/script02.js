@@ -12,6 +12,6 @@ function convertirEnFrancs() {
         eurosInput.value = '1';
     } else {
         const francsValue = eurosValue * 6.55957;
-        francsOutput.value = francsValue.toFixed(2);
+        francsOutput.value = francsValue.toFixed(2) + " F.";
     }
 }
