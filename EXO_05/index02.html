@@ -4,16 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>Document</title>
 </head>
 <body onLoad='ConvertirEnFrancs()'>
-    <div id='bloc'>
+    <div class="changerbox">
         <h2>Ultimate Money Changer</h2>
         <br>
         <form name='form1' action='convertisseur.html'>
             Euros <input type='text' name='euros' id='euros' value='1'>
             <br>
-            Francs <output type='text' name='francs' id='francs'>
+            <div class="outputFR">
+                Francs <output type='text' name='francs' id='francs'>
+            </div>
         </form>
     </div>
     <script src="script02.js"></script>
