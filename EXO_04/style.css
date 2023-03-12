@@ -13,10 +13,8 @@
 .box {
     width : 60px;
     height: 60px;
+    line-height: 55px;
+    text-align: center;
+    font-size: 30px;
 }
 
-.box-transform {
-    width : 60px;
-    height: 60px;
-    background-color: black;    
-}
