@@ -70,10 +70,13 @@ for (let i = 1; i <= nbBox; i++){
         if (turnCntr === 9) {
 
             const boxes = document.querySelectorAll('.box')
-
+            
+            document.getElementById('player-turn').innerHTML = "(T _ T)"
+            
             setTimeout(function() {
                 
-                alert('Game over !')
+                alert('GAME OVER !')
+
 
                 boxes.forEach(function(box) {
                     box.style.pointerEvents = 'none';
