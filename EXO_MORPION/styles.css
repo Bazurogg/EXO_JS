@@ -18,14 +18,25 @@
 
 }
 
-.counter-box {
-    padding-top: 30vh;
+.leftoption-box {
+    padding-top: 20vh;
     text-align: center;
 }
 
+.resetbtn {
+    padding-left: 25vh;
+    margin-top: 5vh;
+}
+
+#reset-button {
+    padding: 10px;
+    cursor: pointer;
+    visibility: hidden;
+}
+
 #counter-turn {
-    margin-left: 20vh;
-    margin-right: 35vh;
+    margin-left: 40vh;
+    margin-right: 15vh;
     font-size: 50px;
     font-family: 'Quicksand', sans-serif;
 }
